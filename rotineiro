@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "deseja ver as horas?"
+read resp
+
+if ["$resp" = "sim"]; then
+horas = $(date+"%H:%M:%S")
+echo "as horas sao"
+echo $horas
+else
+echo "te vejo em breve"
+fi
